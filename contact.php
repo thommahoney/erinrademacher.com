@@ -2,7 +2,7 @@
    include_once('header.php');
    $portfolio = false;
    $page = 'contact';
-   include('body_start.php');
+   include_once('body_start.php');
 ?>
       <div class="inline-block contact">
         <p class="left">

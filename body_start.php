@@ -2,7 +2,7 @@
   <div id="container">
     <h1><a href="/">Erin<em>Rademacher</em></a></h1>
     <script type="text/javascript">
-        var portfolio = <?= $portfolio ?>;
+        var portfolio = <?= $portfolio ? 'true' : 'false' ?>;
     </script>
     <div id="navigation">
       <ul>

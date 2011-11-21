@@ -4,6 +4,13 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="/js/site.js"></script>
   <script type="text/javascript">
+<?php
+ if ($portfolio) {
+?>
+    var imageViewer = new ImageViewer('<?= $page ?>', <?= $image_count ?>);
+<?php
+ }
+?>
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-12458765-2']);
 	  _gaq.push(['_trackPageview']);

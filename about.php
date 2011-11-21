@@ -2,7 +2,7 @@
    include_once('header.php');
    $portfolio = false;
    $page = 'about';
-   include('body_start.php');
+   include_once('body_start.php');
 ?>
       <div class="inline-block">
         <img src="https://s3.amazonaws.com/erinrademacher.com/about.jpg" width="347" height="520" alt="" />
