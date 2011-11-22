@@ -18,3 +18,127 @@
   font-weight: bold;
   font-style: italic;
 }
+
+body {
+  padding-top: 30px;
+  font-family: Quicksand, sans-serif;
+}
+
+body a,
+body a:link,
+body a:visited,
+body a:hover,
+body a:focus,
+body a:active {
+  text-decoration: none;
+  color: #6f6f6f;
+}
+
+body h1#logo {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+body h1#logo em {
+  color: #aaa;
+}
+
+body div#container {
+  width: 780px;
+  margin: 0px auto;
+  position: relative;
+}
+
+body div#container div#navigation {
+  width: 200px;
+  padding-right: 10px;
+  position: absolute;
+  left: -215px;
+  vertical-align: top;
+  text-align: right;
+}
+
+body div#container div#navigation ul li {
+  font-size: 18px;
+  line-height: 24px;
+  padding-right: 10px;
+}
+
+body div#container div#navigation ul li.selected,
+body div#container div#navigation ul li:hover {
+  background-image: url(/images/li_hover.png);
+  background-repeat: no-repeat;
+  background-position: 198px 2px;
+}
+
+body div#container div#navigation ul#portfolio_tier2 li {
+  font-size: 16px;
+  line-height: 20px;
+  padding-right: 20px;
+}
+
+body div#container div#navigation ul#portfolio_tier2 li.selected,
+body div#container div#navigation ul#portfolio_tier2 li:hover {
+  background-image: url(/images/li_hover_tier2.png);
+  background-position: 178px 2px;
+}
+
+body div#container div#content {
+  min-height: 520px;
+}
+
+body div#container div.portfolio#content {
+  text-align: center;
+}
+
+body div#container div.portfolio#content img#portal {
+  margin: 0 auto;
+}
+
+body div#container div.portfolio#content div#thumbs {
+  margin-top: 10px;
+  text-align: center;
+}
+
+body div#container div.portfolio#content div#thumbs img {
+  margin: 0 7.5px;
+}
+
+body div#container div.portfolio#content div#thumbs img:hover {
+  cursor: pointer;
+}
+
+body div#container div#content div.inline-block {
+  display: inline-block;
+}
+
+body div#container div#content div.inline-block.about {
+  width: 418px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+body div#container div#content div.inline-block.about p {
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  color: #888;
+}
+
+body div#container div#content div.inline-block.contact p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 180px;
+}
+
+body div#container div#content div.inline-block.contact p.left {
+  text-align: right;
+  width: 224px;
+}
+
+body div#copyright {
+  font-size: 12px;
+  text-align: right;
+  color: #666;
+  margin: 5px 0;
+}

@@ -1,7 +1,7 @@
 <body>
   <div id="container">
-    <h1><a href="/">Erin<em>Rademacher</em></a></h1>
-    <script type="text/javascript">
+    <h1 id="logo"><a href="/">Erin<em>Rademacher</em></a></h1>
+    <script>
         var portfolio = <?= $portfolio ? 'true' : 'false' ?>;
     </script>
     <div id="navigation">

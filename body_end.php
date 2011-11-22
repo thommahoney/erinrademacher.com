@@ -1,9 +1,9 @@
     </div>
     <div id="copyright">&copy; 2011 Erin Rademacher</div>
   </div>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script type="text/javascript" src="/js/site.js"></script>
-  <script type="text/javascript">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="/js/site.js"></script>
+  <script>
 <?php
  if ($portfolio) {
 ?>

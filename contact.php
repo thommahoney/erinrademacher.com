@@ -7,7 +7,7 @@
       <div class="inline-block contact">
         <p class="left">
           Email:<br/>
-          Phone:<br/>
+          <span>Phone:</span><br/>
           Blog:
         </p>
       </div>
