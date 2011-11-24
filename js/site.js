@@ -36,13 +36,18 @@ ImageViewer.prototype.thumbUrl = function(index) {
 (function() {
    $('div#navigation li#portfolio').mouseenter(function()
    {
-      $('div#navigation ul#portfolio_tier2').slideDown();
+      var $tier2 = $('div#navigation ul#portfolio_tier2');
+      if (!$tier2.is(':animated'))
+      {
+         $tier2.slideDown();
+      }
    });
    $('div#navigation').mouseleave(function()
    {
-      if (!portfolio)
+      var $tier2 = $('div#navigation ul#portfolio_tier2');
+      if (!portfolio && !$tier2.is(':animated'))
       {
-         $('div#navigation ul#portfolio_tier2').slideUp();
+         !$tier2.slideUp();
       }
    });
    $('a#email').attr('href', 'mailto:rademacher.erin@gmail.com');
