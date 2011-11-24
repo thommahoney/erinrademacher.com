@@ -52,4 +52,6 @@ ImageViewer.prototype.thumbUrl = function(index) {
    });
    $('a#email').attr('href', 'mailto:rademacher.erin@gmail.com');
    $('a#email').text('rademacher.erin@gmail.com');
+   $('a#phone').attr('href', 'tel:1-716-930-4461');
+   $('a#phone').text('716.930.4461');
 })();

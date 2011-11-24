@@ -110,6 +110,10 @@ body div#container div#content div.inline-block.about p {
   color: #888;
 }
 
+body div#container div#content div.inline-block.about a {
+  text-decoration: underline;
+}
+
 body div#container div#content div.inline-block.contact p {
   font-size: 16px;
   line-height: 24px;
