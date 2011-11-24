@@ -23,6 +23,9 @@ ImageViewer.prototype.init = function() {
       $thumbs.append($img);
    }
    $('img#portal').attr('src', this.imageUrl(1));
+   $(window).bind('load', function() {
+      imageViewer.preloadImages();
+   });
 };
 
 ImageViewer.prototype.imageUrl = function(index) {
@@ -31,6 +34,13 @@ ImageViewer.prototype.imageUrl = function(index) {
 
 ImageViewer.prototype.thumbUrl = function(index) {
    return "https://s3.amazonaws.com/erinrademacher.com/" + this.prefix + "_" + index + "_Thumb.jpg";
+};
+
+ImageViewer.prototype.preloadImages = function() {
+   for (var i = 2; i <= this.count; i++)
+   {
+      $('<img/>', { src: this.imageUrl(i) });
+   }
 };
 
 (function() {

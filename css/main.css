@@ -89,8 +89,17 @@ body div#container div.portfolio#content div#thumbs img {
   margin: 0 7.5px;
 }
 
-body div#container div.portfolio#content div#thumbs img:hover {
+body div#container div.portfolio#content div#thumbs img:hover,
+body div#container div.portfolio#content div#thumbs img:active {
   cursor: pointer;
+  opacity: 0.9;
+     -moz-box-shadow: 0 1px 3px #888;
+  -webkit-box-shadow: 0 1px 3px #888;
+          box-shadow: 0 1px 3px #888;
+}
+
+body div#container div.portfolio#content div#thumbs img:active {
+  opacity: 1.0;
 }
 
 body div#container div#content div.inline-block {
