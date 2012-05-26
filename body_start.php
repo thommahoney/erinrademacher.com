@@ -21,12 +21,6 @@
             <li id="weather" class="<?= $page == 'Weather' ? 'selected' : '' ?>">
               <a href="/portfolio/weather.php">Strange Weather</a>
             </li>
-            <li id="romanticism" class="<?= $page == 'Classical' ? 'selected' : '' ?>">
-              <a href="/portfolio/romanticism.php">Classical Romanticism</a>
-            </li>
-            <li id="beauty" class="<?= $page == 'Beauty' ? 'selected' : '' ?>">
-              <a href="/portfolio/beautiful_distortion.php">A Beautiful Distortion</a>
-            </li>
           </ul>
         </li>
         <li id="about" class="<?= $page == 'about' ? 'selected' : '' ?>">
