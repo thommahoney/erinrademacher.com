@@ -9,11 +9,20 @@
         <li id="portfolio" class="<?= $portfolio ? 'selected' : '' ?>">
           <a href="/portfolio/isolation.php">Portfolio</a>
           <ul id="portfolio_tier2" style="display: <?= $portfolio ? 'block' : 'none' ?>;">
+            <li id="another" class="<?= $page == 'Another' ? 'selected' : '' ?>">
+              <a href="/portfolio/another.php">Another Me</a>
+            </li>
+            <li id="thumbelina" class="<?= $page == 'Thumbelina' ? 'selected' : '' ?>">
+              <a href="/portfolio/thumbelina.php">Thumbelina</a>
+            </li>
             <li id="isolation" class="<?= $page == 'Isolation' ? 'selected' : '' ?>">
               <a href="/portfolio/isolation.php">Isolation</a>
             </li>
+            <li id="weather" class="<?= $page == 'Weather' ? 'selected' : '' ?>">
+              <a href="/portfolio/weather.php">Strange Weather</a>
+            </li>
             <li id="romanticism" class="<?= $page == 'Classical' ? 'selected' : '' ?>">
-              <a href="/portfolio/romanticism.php">Romanticism</a>
+              <a href="/portfolio/romanticism.php">Classical Romanticism</a>
             </li>
             <li id="beauty" class="<?= $page == 'Beauty' ? 'selected' : '' ?>">
               <a href="/portfolio/beautiful_distortion.php">A Beautiful Distortion</a>

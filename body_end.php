@@ -1,5 +1,5 @@
     </div>
-    <div id="copyright">&copy; 2011 Erin Rademacher</div>
+    <div id="copyright">&copy; <?= date("Y"); ?> Erin Rademacher</div>
   </div>
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="/js/site.js"></script>

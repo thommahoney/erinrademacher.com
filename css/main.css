@@ -57,7 +57,7 @@ body div#container div#navigation ul li:hover {
 }
 
 body div#container div#navigation ul#portfolio_tier2 li {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   padding-right: 20px;
 }
@@ -113,10 +113,10 @@ body div#container div#content div.inline-block.about {
 }
 
 body div#container div#content div.inline-block.about p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px;
   margin-bottom: 10px;
-  color: #888;
+  color: #666;
 }
 
 body div#container div#content div.inline-block.about a {
@@ -126,17 +126,18 @@ body div#container div#content div.inline-block.about a {
 body div#container div#content div.inline-block.contact p {
   font-size: 16px;
   line-height: 24px;
-  padding-top: 180px;
+  padding-top: 14px;
+  width: 300px;
 }
 
-body div#container div#content div.inline-block.contact p.left {
-  text-align: right;
-  width: 224px;
+body div#container div#content div.inline-block.contact p a:hover {
+  color: #666;
+  text-decoration: underline;
 }
 
 body div#copyright {
   font-size: 12px;
   text-align: right;
   color: #666;
-  margin: 5px 0;
+  margin: 10px 0;
 }
