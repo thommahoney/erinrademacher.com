@@ -7,7 +7,7 @@
     <div id="navigation">
       <ul>
         <li id="portfolio" class="<?= $portfolio ? 'selected' : '' ?>">
-          <a href="/portfolio/isolation.php">Portfolio</a>
+          <a href="/portfolio/another.php">Portfolio</a>
           <ul id="portfolio_tier2" style="display: <?= $portfolio ? 'block' : 'none' ?>;">
             <li id="another" class="<?= $page == 'Another' ? 'selected' : '' ?>">
               <a href="/portfolio/another.php">Another Me</a>
