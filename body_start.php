@@ -7,8 +7,11 @@
     <div id="navigation">
       <ul>
         <li id="portfolio" class="<?= $portfolio ? 'selected' : '' ?>">
-          <a href="/portfolio/another.php">Portfolio</a>
+          <a href="/portfolio/jacket.php">Portfolio</a>
           <ul id="portfolio_tier2" style="display: <?= $portfolio ? 'block' : 'none' ?>;">
+            <li id="jacket" class="<?= $page == 'Jacket' ? 'selected' : '' ?>">
+              <a href="/portfolio/jacket.php">The Jacket</a>
+            </li>
             <li id="another" class="<?= $page == 'Another' ? 'selected' : '' ?>">
               <a href="/portfolio/another.php">Another Me</a>
             </li>
