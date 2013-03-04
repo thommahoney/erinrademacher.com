@@ -28,14 +28,14 @@ ImageViewer.prototype.init = function() {
 };
 
 ImageViewer.prototype.baseImageUrl = function(index) {
-  return "https://s3.amazonaws.com/erinrademacher.com/" + this.prefix + "_" + index;
+  return "https://s3.amazonaws.com/erinrademacher.com/new/" + this.prefix + "_" + index;
 }
 ImageViewer.prototype.imageUrl = function(index) {
   return this.baseImageUrl(index) + ".jpg";
 };
 
 ImageViewer.prototype.thumbUrl = function(index) {
-  return this.baseImageUrl(index) + "_Thumb.jpg";
+  return this.baseImageUrl(index) + "_thumb.jpg";
 };
 
 ImageViewer.prototype.preloadImages = function() {
