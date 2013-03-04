@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  host: localhost
+  username: tmahoney
+  database: erinrademacher_dev
+
+test:
+  adapter: postgresql
+  host: localhost
+  username: tmahoney
+  database: erinrademacher_test
+
+#production:
+  #adapter: postgresql
+  #host: localhost
+  #username: tmahoney
+  #database: erinrademacher_prod

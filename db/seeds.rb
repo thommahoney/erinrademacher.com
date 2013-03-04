@@ -1,0 +1,5 @@
+Series.create(name: "Jacket", display_name: "The Jacket", index: 0, image_count: 12)
+Series.create(name: "Another", display_name: "Another Me", index: 1, image_count: 12)
+Series.create(name: "Thumbelina", display_name: "Thumbelina", index: 2, image_count: 10)
+Series.create(name: "Isolation", display_name: "Isolation", index: 3, image_count: 12)
+Series.create(name: "Weather", display_name: "Strange Weather", index: 4, image_count: 3)
