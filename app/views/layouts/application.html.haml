@@ -1,53 +1,52 @@
 !!!
 %html
   %head
-    %title ErinRademacher.com
+    %title ErinMahoneyPhoto.com
 
-    %link{ rel: "shortcut icon", href: "/images/erinrademacher.com.ico" }
+    %link{ rel: "shortcut icon", href: "/images/erinmahoneyphoto.com.ico" }
     = stylesheet_link_tag    "http://yui.yahooapis.com/3.4.1/build/cssreset/reset-min.css", :media => "all"
     = stylesheet_link_tag    "application", :media => "all"
     = csrf_meta_tags
 
-%body
+  %body
 
-  #container
-    %h1#logo
-      %a{ href: "/" }
-        Erin
-        %em Rademacher
+    #container
+      %h1#logo
+        %a{ href: "/" }
+          Erin
+          %em Mahoney
 
-    #navigation
-      %ul
-        %li#portfolio{class: "#{@series ? 'selected' : ''}" }
-          = link_to "Portfolio", series_url(@default.name)
+      #navigation
+        %ul
+          %li#portfolio{class: "#{@series ? 'selected' : ''}" }
+            = link_to "Portfolio", series_url(@default.name)
 
-          %ul#portfolio_tier2{style: "display: #{@series ? 'block' : 'none'}" }
-            - @all_series.each do |series|
-              %li{ id: series.name, class: "#{@series == series ? 'selected' : ''}" }
-                = link_to series.display_name, series_url(series.name)
+            %ul#portfolio_tier2{style: "display: #{@series ? 'block' : 'none'}" }
+              - @all_series.each do |series|
+                %li{ id: series.name, class: "#{@series == series ? 'selected' : ''}" }
+                  = link_to series.display_name, series_url(series.name)
 
-        %li#about{ class: "#{@about ? 'selected' : ''}" }
-          = link_to "About", about_url
+          %li#about{ class: "#{@about ? 'selected' : ''}" }
+            = link_to "About", about_url
 
-        %li#contact{ class: "#{@contact ? 'selected' : ''}" }
-          = link_to "Contact", contact_url
+          %li#contact{ class: "#{@contact ? 'selected' : ''}" }
+            = link_to "Contact", contact_url
 
-    #content{class: "#{@series ? 'portfolio' : ''}"}
+      #content{class: "#{@series ? 'portfolio' : ''}"}
 
-      = yield
+        = yield
 
-    #copyright
-      &copy;
-      = Time.now.year
-      Erin Rademacher
+      #copyright
+        &copy;
+        = Time.now.year
+        Erin Mahoney
 
-  %script
-    = "var portfolio = #{@series ? 'true' : 'false'};"
-  = javascript_include_tag "application"
-  %script
-    - if @series
-      = "var imageViewer = new ImageViewer('#{@series.name}', #{@series.image_count});"
+    %script
+      = "var portfolio = #{@series ? 'true' : 'false'};"
+    = javascript_include_tag "application"
+    %script
+      - if @series
+        = "var imageViewer = new ImageViewer('#{@series.name}', #{@series.image_count});"
 
-  - if Rails.env == "production"
-    %script{src: "/js/ga.js"}
-
+    - if Rails.env.production?
+      %script{src: "/js/ga.js"}

@@ -2,16 +2,16 @@ development:
   adapter: postgresql
   host: localhost
   username: tmahoney
-  database: erinrademacher_dev
+  database: erinmahoneyphoto_dev
 
 test:
   adapter: postgresql
   host: localhost
   username: tmahoney
-  database: erinrademacher_test
+  database: erinmahoneyphoto_test
 
 #production:
   #adapter: postgresql
   #host: localhost
   #username: tmahoney
-  #database: erinrademacher_prod
+  #database: erinmahoneyphoto_prod

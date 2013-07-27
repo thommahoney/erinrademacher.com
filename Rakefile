@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ErinRademacherCom::Application.load_tasks
+ErinMahoneyPhotoCom::Application.load_tasks
